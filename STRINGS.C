@@ -15,29 +15,23 @@ int n2=strlen(str2);
 scanf("%s",str1);
 scanf("%s",str2);
 for(i1=0;i1<n1;i1++)
-{
-flag1[i1]=0;
-flag2[i1]=0;
+{flag1[i1]=0;
+ flag2[i1]=0;
 }
-
 for(i=0;i<n1-1;i++)
-{
-count=1;
+{  count=1;
 for(j=i+1;j<n1;j++)
-{
-if(str1[i]==str1[j])
-{
-++count;
-flag1[j]=1;
-}
-
+{ if(str1[i]==str1[j])
+   {
+    ++count;
+       flag1[j]=1;
+    }
 }
 if(flag1[i]!=1)
 {
 a1[p]=count;
 ++p;
-}
-}
+}}
 for(i1=0;i1<n2-1;i1++)
 {
 count1=1;
@@ -85,7 +79,4 @@ if(a1[i4]>a1[i4])
   else
   {
   printf("false");
-  }
-
-
-}
+  }}
